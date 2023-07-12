@@ -35,7 +35,6 @@ const Home: React.FC<Props> = ({ id, go, fetchedUser }) => {
 		const dataZ = await axios.post('https://63c682584ebaa802854750c5.mockapi.io/test1',
 		data)
 		console.log('66',dataZ)
-		
 	}
 
 	const data:any = useQuery('api',fetchApi)
@@ -58,7 +57,6 @@ const Home: React.FC<Props> = ({ id, go, fetchedUser }) => {
 		console.log(data);
 		mutation.mutate(data)
 		reset()
-		
 	}
 	console.log(errors)
 
